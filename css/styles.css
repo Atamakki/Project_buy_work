@@ -22,6 +22,12 @@ h2 {
   font-size: 60px;
   color: #3C4852;
   font-weight: 700;
+  margin: 0px;
+}
+
+span {
+  font-weight: 800;
+  color: #FFCC80;
 }
 
 .main_header {
@@ -131,6 +137,47 @@ h2 {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.service_benefits_block {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+
+.benefit_text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #3C4852;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.yellow_line {
+  margin-bottom: 25px;
+}
+
+.stages_of_work_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+}
+.work_text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #3C4852;
 }
 
 /*# sourceMappingURL=styles.css.map */
