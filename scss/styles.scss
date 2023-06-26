@@ -1,0 +1,142 @@
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.main-title {
+    background-image: url('../images/main-theme.jpg');
+}
+
+.column {
+    width: 100%;
+}
+
+.row {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #3C4852;
+    font-weight: 700;
+}
+
+.main_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    &_right {
+        display: flex;
+        flex-direction: row;
+        min-width: 400px;
+        justify-content: space-between;
+        align-items: center;
+        &_item {
+            font-size: 18px;
+            line-height: 21.6px;
+            color: #3C4852;
+            text-decoration: none;
+            height: 35px;
+        }
+        &_support {
+            font-weight: 700;
+            
+        }
+        &_support::before {
+            content: '';
+            background-image: url('../images/cloud.svg');
+            background-size: 26px 26px;
+            background-position: left;
+            background-repeat: no-repeat;
+            padding-right: 30px;
+            height: 50px;
+        }
+        &_button {
+            background: #FFCC80;
+            width: 147px;
+            height: 58px;
+            border-radius: 10px;
+            border: #FFCC80;
+            font-weight: 700;
+        }
+        &_button::after {
+            content: ''; 
+            background-image: url('../images/login_logo.svg');
+            background-size: 21px 21px;
+            background-position: right;
+            background-repeat: no-repeat;
+            padding-left: 30px;
+        }
+    }
+}
+
+.main_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: #3C4852;
+    &_left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &1 {
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 115px;
+        }
+        &2 {
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 43.2px;
+        }
+        &2::after {
+            content: '';
+            background-image: url('../images/smile.svg');
+            background-position: right;
+            background-repeat: no-repeat;
+            padding-right: 50px;
+        }
+    }
+    &_buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        &_left {
+            background: #FFCC80;
+            width: 260px;
+            height: 86px;
+            border-radius: 10px;
+            border: #FFCC80;
+            color: #3C4852;
+            font-weight: 800;
+        }
+        &_right {
+            width: 230px;
+            height: 86px;
+            background: white;
+            border: 1px #FFCC80 solid;
+            border-radius: 10px;
+            color: #3C4852;
+            font-weight: 800;
+        }
+    }
+}
+
+.service_benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.yellow_line {
+
+}
