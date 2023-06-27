@@ -1,10 +1,19 @@
+@font-face {
+  font-family: "Panton";
+  src: url(../font/PantonNarrow-Trial-Light.ttf);
+}
 html, body {
   margin: 0px;
   padding: 0px;
+  font-family: "Panton";
 }
 
-.main-title {
-  background-image: url("../images/main-theme.jpg");
+.main_title {
+  background-image: url("../images/Vector 37.png"), url("../images/Vector 36.png"), url("../images/Vector 35.png"), url("../images/Rectangle 237.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 170px 180px, 290px 70px, 800px 180px, 1920px 880px;
+  background-position: 0px 700px, 45px 0px, 90px 0px, top center;
+  padding-bottom: 150px;
 }
 
 .column {
@@ -33,8 +42,7 @@ span {
 .main_header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .main_header_right {
   display: flex;
@@ -42,6 +50,7 @@ span {
   min-width: 400px;
   justify-content: space-between;
   align-items: center;
+  margin-left: 550px;
 }
 .main_header_right_item {
   font-size: 18px;
