@@ -191,8 +191,11 @@ span {
 
 .background_box {
   margin-top: 200px;
-  background-color: #f8f8f8;
-  padding: 70px 0px 70px 0px;
+  background-image: url("../images/economy_vector1.png"), url("../images/economy_vector2.png"), url("../images/subtract.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100px 200px, 140px 200px, 100% 580px;
+  background-position: top left, bottom right;
+  padding: 70px 0px 50px 0px;
 }
 
 .time_saving {
@@ -204,6 +207,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
 }
 .time_saving_text {
   margin-top: 20px;
@@ -213,6 +217,9 @@ span {
 }
 .time_saving h2 {
   text-align: left;
+}
+.time_saving_image {
+  margin-left: 120px;
 }
 
 /*# sourceMappingURL=styles.css.map */
