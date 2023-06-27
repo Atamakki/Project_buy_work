@@ -180,13 +180,39 @@ span {
 .work {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 40px;
+  grid-column-gap: 120px;
+  grid-row-gap: 150px;
 }
 .work_text {
   font-weight: 600;
   font-size: 20px;
   color: #3C4852;
+}
+
+.background_box {
+  margin-top: 200px;
+  background-color: #f8f8f8;
+  padding: 70px 0px 70px 0px;
+}
+
+.time_saving {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.time_saving_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.time_saving_text {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+}
+.time_saving h2 {
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
