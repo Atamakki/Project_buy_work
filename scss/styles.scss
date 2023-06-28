@@ -46,13 +46,13 @@ span {
 .main_header {
     display: flex;
     flex-direction: row;
-    
     padding-top: 50px;
     &_right {
         display: flex;
         flex-direction: row;
         min-width: 400px;
         justify-content: space-between;
+        gap: 50px;
         align-items: center;
         margin-left: 550px;
         &_item {
@@ -64,16 +64,16 @@ span {
         }
         &_support {
             font-weight: 700;
-            
+             
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
         }
-        &_support::before {
-            content: '';
-            background-image: url('../images/cloud.svg');
-            background-size: 26px 26px;
-            background-position: left;
-            background-repeat: no-repeat;
-            padding-right: 30px;
-            height: 50px;
+        &_support a {
+            text-decoration: none;
+            color: #3C4852;
+            font-weight: 700;
         }
         &_button {
             background: #FFCC80;
@@ -272,9 +272,11 @@ span {
 }
 
 .background_bottom {
-    background-image: url('../images/subtract_footer.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    background-image: url('../images/Vector\ 61.png'),
+    url('../images/subtract_footer.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center ,center bottom;
+    background-size: 50px 215px, auto auto;
 }
 
 .footer {
