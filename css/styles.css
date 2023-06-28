@@ -121,7 +121,7 @@ span {
 .main_text_buttons {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 23px;
 }
 .main_text_buttons_left {
   background: #FFCC80;
@@ -148,7 +148,7 @@ span {
   gap: 20px;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .service_benefits_block {
   display: flex;
@@ -181,13 +181,17 @@ span {
 .work {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 120px;
-  grid-row-gap: 150px;
+  grid-column-gap: 180px;
+  grid-row-gap: 50px;
+  justify-content: center;
 }
 .work_text {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 20px;
   color: #3C4852;
+  text-align: center;
+  margin-top: 27px;
+  margin-right: 50px;
 }
 
 .background_box {
@@ -274,7 +278,8 @@ span {
 .footer_title {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
+  color: #FFFFFF;
 }
 .footer_box {
   display: flex;
@@ -346,9 +351,9 @@ span {
   height: 58px;
   border-radius: 10px;
   border: #FFCC80;
-  font-weight: 700;
   color: #3C4852;
   font-weight: 700;
+  letter-spacing: 0.7px;
 }
 
 /*# sourceMappingURL=styles.css.map */
