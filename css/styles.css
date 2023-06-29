@@ -184,6 +184,7 @@ span {
   grid-column-gap: 180px;
   grid-row-gap: 50px;
   justify-content: center;
+  justify-items: center;
 }
 .work_text {
   font-weight: 800;
@@ -191,7 +192,26 @@ span {
   color: #3C4852;
   text-align: center;
   margin-top: 27px;
-  margin-right: 50px;
+}
+.work_4 {
+  padding-top: 65px;
+  padding-left: 30px;
+}
+
+.notebook {
+  position: relative;
+  width: 247px;
+  height: 247px;
+}
+.notebook img {
+  position: absolute;
+}
+.notebook_9 {
+  top: -64px;
+  right: 21px;
+}
+.notebook_ellipse {
+  z-index: -1;
 }
 
 .background_box {
