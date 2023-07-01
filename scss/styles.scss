@@ -10,15 +10,62 @@ html, body {
 }
 
 .main_title {
-    background-image: url('../images/Vector\ 37.png'),
-    url('../images/Vector\ 36.png'),
-    url('../images/Vector\ 35.png'),
-    url('../images/Rectangle\ 237.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 170px 180px, 290px 70px, 800px 180px, 1920px 880px;
-    background-position: 0px 700px, 45px 0px , 90px 0px, top center;
-    padding-bottom: 150px;
+    background-image:url('../images/Rectangle\ 237.png');
+    background-repeat: no-repeat;
+    background-size:  auto 880px;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+@media (max-width: 400px) {
+    .main_title {
+        max-width: 400px;
+    }
+}
+
+/*WHITE AND YELLOW CLOUDS */
+
+.cloud {
+    &_top {
+        position: absolute;
+        z-index: 2;
+        top: -50px;
+        left: -230px;
+    }
+    &_white {
+        position: absolute;
+        z-index: 1;
+        top: -50px;
+        left: -100px;
+    }
+    &_bottom {
+        position: absolute;
+        z-index: 3;
+        top: 700px;
+        left: -310px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cloud {
+        &_top {
+            width: 180px;
+            height: 30px;
+        }
+        &_white {
+            width: 350px;
+            height: 100px;
+        }
+        &_bottom {
+            width: 90px;
+            height: 50px;
+        }
+    }
+}
+
+/*WHITE AND YELLOW CLOUDS */
 
 .column {
     width: 100%;
@@ -47,6 +94,14 @@ span {
     display: flex;
     flex-direction: row;
     padding-top: 50px;
+    justify-content: space-between;
+    &_left {
+        position: relative;
+        &_image {
+            z-index: 3;
+            position: relative;
+        }
+    }
     &_right {
         display: flex;
         flex-direction: row;
@@ -54,7 +109,6 @@ span {
         justify-content: space-between;
         gap: 50px;
         align-items: center;
-        margin-left: 550px;
         &_item {
             font-size: 18px;
             line-height: 21.6px;
@@ -98,11 +152,24 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    justify-items: center;
     margin-top: 50px;
     color: #3C4852;
+    &_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        padding-left: 150px;
+    }
     &_left {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 30px;
         &1 {
             font-size: 96px;
@@ -125,6 +192,8 @@ span {
     &_buttons {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 600px;
         gap: 23px;
         &_left {
             background: #FFCC80;
@@ -147,6 +216,11 @@ span {
     }
 }
 
+@media (max-width: 1000px) {
+    .main_text_right {
+       display: none;
+    }
+}
 
 
 .service_benefits {
@@ -160,7 +234,9 @@ span {
         display: flex;
         flex-direction: row;
         gap: 130px;
-        
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -204,6 +280,12 @@ span {
     &_4 {
         padding-top: 65px;
         padding-left: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .work {
+        grid-template-columns: repeat(auto-fit, minmax(209px,1fr));
     }
 }
 
@@ -257,6 +339,11 @@ span {
         margin-left: 120px;
     }
 }
+@media (max-width: 1000px) {
+    .time_saving_image {
+        display: none;
+    }
+}
 
 .refund {
     display: flex;
@@ -271,6 +358,7 @@ span {
         gap: 100px;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         &_item {
             display: flex;
             flex-direction: column;
@@ -319,6 +407,7 @@ span {
         justify-content: center;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         &_payments {
             display: flex;
             flex-direction: row;
