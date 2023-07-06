@@ -344,9 +344,16 @@ span {
     }
 }
 
+.image_glass {
+    margin-left: 19px;
+}
+
 @media (max-width: 1000px) {
     .work {
         grid-template-columns: repeat(auto-fit, minmax(209px,1fr));
+    }
+    .work_block {
+        scale: 0.8;
     }
 }
 
@@ -537,6 +544,33 @@ span {
             font-weight: 700;
             letter-spacing: 0.7px;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding-bottom: 5px;
+    }
+    .footer_box_rights, .footer_box_order,
+    .footer_box_support {
+        display: none;
+    }
+    .footer_box_payments {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5px;
+        justify-content: center;
+        margin-right: 40px;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #99a2a9;
+        border-radius: 14px;
+        width: 90px;
+        height: 60px;
     }
 }
 
