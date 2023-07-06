@@ -19,11 +19,6 @@ html, body {
   align-items: center;
 }
 
-@media (max-width: 400px) {
-  .main_title {
-    max-width: 400px;
-  }
-}
 /*WHITE AND YELLOW CLOUDS */
 .cloud_top {
   position: absolute;
@@ -49,7 +44,7 @@ html, body {
     width: 180px;
     height: 30px;
     top: -50px;
-    left: 300px;
+    left: 100px;
   }
   .cloud_white {
     width: 350px;
@@ -84,6 +79,62 @@ span {
   color: #FFCC80;
 }
 
+/* Mobile version */
+.mobile_header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.mobile_header_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile_text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  color: #3C4852;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.mobile_text1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+.mobile_text2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.mobile_text_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.mobile_text_buttons_left {
+  background: #FFCC80;
+  width: 260px;
+  height: 86px;
+  border-radius: 10px;
+  border: #FFCC80;
+  color: #3C4852;
+  font-weight: 800;
+}
+.mobile_text_buttons_right {
+  width: 260px;
+  height: 86px;
+  background: white;
+  border: 1px #FFCC80 solid;
+  border-radius: 10px;
+  color: #3C4852;
+  font-weight: 800;
+}
+
+/* Mobile version */
 .main_header {
   display: flex;
   flex-direction: row;
@@ -142,7 +193,12 @@ span {
 }
 
 @media (max-width: 1000px) {
-  .main_header_right {
+  .main_title {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .main_title_mobile {
     display: none;
   }
 }
@@ -214,28 +270,13 @@ span {
   font-weight: 800;
 }
 
-@media (max-width: 1000px) {
-  .main_text_right {
-    display: none;
-  }
-  .main_text_left1 {
-    font-size: 70px;
-  }
-  .main_text_left2 {
-    font-size: 21px;
-  }
-  .main_text_buttons {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
 .service_benefits {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   margin-top: 100px;
 }
 .service_benefits_block {
@@ -416,6 +457,7 @@ span {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .footer_box_payments_visamaster {
