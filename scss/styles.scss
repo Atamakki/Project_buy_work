@@ -84,6 +84,12 @@ h2 {
     margin: 0px;
 }
 
+@media (max-width: 650px) {
+    h2 {
+        font-size: 50px;
+    }
+}
+
 span {
     font-weight: 800;
     color: #FFCC80;
@@ -111,12 +117,13 @@ span {
     align-items: center;
     gap: 50px;
     &1 {
-       font-size: 70px;
+       font-size: 65px;
         font-weight: 700;
     }
     &2 {
         font-size: 30px;
         font-weight: 400;
+        text-align: center;
     }
     &_buttons {
         display: flex;
@@ -144,7 +151,15 @@ span {
     }
 }
 
+.menu-button {
+    border: 0;
+    background: transparent;
+    padding: 0;
+
+}
+
 /* Mobile version */
+
 .main_header {
     display: flex;
     flex-direction: row;
@@ -578,7 +593,7 @@ span {
         scale: 0.9;
     }
     .footer_image {
-        scale: 0.5;
+        scale: 0.9;
     }
 }
 

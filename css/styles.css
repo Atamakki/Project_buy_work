@@ -74,6 +74,11 @@ h2 {
   margin: 0px;
 }
 
+@media (max-width: 650px) {
+  h2 {
+    font-size: 50px;
+  }
+}
 span {
   font-weight: 800;
   color: #FFCC80;
@@ -102,12 +107,13 @@ span {
   gap: 50px;
 }
 .mobile_text1 {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 700;
 }
 .mobile_text2 {
   font-size: 30px;
   font-weight: 400;
+  text-align: center;
 }
 .mobile_text_buttons {
   display: flex;
@@ -132,6 +138,12 @@ span {
   border-radius: 10px;
   color: #3C4852;
   font-weight: 800;
+}
+
+.menu-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
 }
 
 /* Mobile version */
@@ -559,7 +571,7 @@ span {
     scale: 0.9;
   }
   .footer_image {
-    scale: 0.5;
+    scale: 0.9;
   }
 }
 
