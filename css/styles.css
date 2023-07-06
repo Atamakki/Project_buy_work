@@ -536,6 +536,10 @@ span {
   .footer_box_support {
     display: none;
   }
+  .footer_box {
+    justify-content: center;
+    margin-left: 35px;
+  }
   .footer_box_payments {
     display: flex;
     flex-direction: row;
@@ -552,6 +556,10 @@ span {
     border-radius: 14px;
     width: 90px;
     height: 60px;
+    scale: 0.9;
+  }
+  .footer_image {
+    scale: 0.5;
   }
 }
 
