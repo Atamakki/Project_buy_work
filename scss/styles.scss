@@ -12,7 +12,7 @@ html, body {
 .main_title {
     background-image:url('../images/Rectangle\ 237.png');
     background-repeat: no-repeat;
-    background-size:  auto 880px;
+    background-size:  auto auto;
     background-position: top center;
     display: flex;
     flex-direction: column;
@@ -53,6 +53,8 @@ html, body {
         &_top {
             width: 180px;
             height: 30px;
+            top: -50px;
+            left: 300px;
         }
         &_white {
             width: 350px;
@@ -148,6 +150,12 @@ span {
     }
 }
 
+@media (max-width: 1000px) {
+    .main_header_right {
+        display: none;
+    }
+}
+
 .main_text {
     display: flex;
     flex-direction: row;
@@ -219,6 +227,19 @@ span {
 @media (max-width: 1000px) {
     .main_text_right {
        display: none;
+    }
+    .main_text_left {
+        &1 {
+            font-size: 70px;
+        }
+        &2 {
+            font-size: 21px;
+        }
+    }
+    .main_text_buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 

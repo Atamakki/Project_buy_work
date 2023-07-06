@@ -11,7 +11,7 @@ html, body {
 .main_title {
   background-image: url("../images/Rectangle 237.png");
   background-repeat: no-repeat;
-  background-size: auto 880px;
+  background-size: auto auto;
   background-position: top center;
   display: flex;
   flex-direction: column;
@@ -48,6 +48,8 @@ html, body {
   .cloud_top {
     width: 180px;
     height: 30px;
+    top: -50px;
+    left: 300px;
   }
   .cloud_white {
     width: 350px;
@@ -139,6 +141,11 @@ span {
   padding-left: 30px;
 }
 
+@media (max-width: 1000px) {
+  .main_header_right {
+    display: none;
+  }
+}
 .main_text {
   display: flex;
   flex-direction: row;
@@ -210,6 +217,17 @@ span {
 @media (max-width: 1000px) {
   .main_text_right {
     display: none;
+  }
+  .main_text_left1 {
+    font-size: 70px;
+  }
+  .main_text_left2 {
+    font-size: 21px;
+  }
+  .main_text_buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 .service_benefits {
