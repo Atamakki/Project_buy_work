@@ -21,6 +21,11 @@ html, body {
     
 }
 
+ul {
+    list-style-type: none;
+}
+
+
 /*WHITE AND YELLOW CLOUDS */
 
 .cloud {
@@ -159,6 +164,55 @@ span {
 }
 
 /* Mobile version */
+
+/* Mobile menu */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 375px;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    transition: margin-right 300ms ease;
+    margin-right: 0;
+    opacity: 1;
+    z-index: 5;
+}
+
+.mobile-menu.hidden {
+    /* display: none; */
+     margin-right: -375px;
+     opacity: 0;
+ }
+
+.mobile-menu .main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+}
+
+.menu-rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.menu_close_button {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* Mobile menu */
 
 .main_header {
     display: flex;
