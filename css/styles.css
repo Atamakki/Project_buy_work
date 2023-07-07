@@ -6,6 +6,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   font-family: "Panton";
+  overflow-x: hidden;
 }
 
 .main_title {
@@ -70,6 +71,11 @@ ul {
   margin: 0 auto;
 }
 
+@media (max-width: 1000px) {
+  .row {
+    max-width: 1000px;
+  }
+}
 h2 {
   text-align: center;
   font-size: 60px;
@@ -157,7 +163,7 @@ span {
   top: 0;
   right: 0;
   width: 375px;
-  min-height: 400px;
+  min-height: 350px;
   box-sizing: border-box;
   padding: 60px 20px;
   background-color: white;
@@ -179,7 +185,7 @@ span {
 .mobile-menu .main-nav {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   align-items: start;
 }
 
@@ -388,21 +394,38 @@ span {
   text-align: center;
   margin-top: 27px;
 }
+.work_text2 {
+  max-width: 250px;
+}
+.work_text3 {
+  max-width: 300px;
+}
 .work_4 {
   padding-top: 65px;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .image_glass {
   margin-left: 19px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .work {
-    grid-template-columns: repeat(auto-fit, minmax(209px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(209px, 1fr));
   }
   .work_block {
     scale: 0.8;
+  }
+}
+@media (max-width: 1000px) and (min-width: 600px) {
+  .work {
+    grid-template-columns: repeat(2, minmax(209px, 1fr));
+  }
+  .work_block {
+    scale: 0.9;
   }
 }
 .notebook {
@@ -446,6 +469,7 @@ span {
   font-size: 20px;
   line-height: 34px;
   font-weight: 400;
+  max-width: 650px;
 }
 .time_saving h2 {
   text-align: left;
@@ -495,6 +519,7 @@ span {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
+  max-width: 500px;
 }
 
 .background_bottom {
@@ -591,9 +616,15 @@ span {
   letter-spacing: 0.7px;
 }
 
+@media (max-width: 1050px) {
+  .footer_box_rights, .footer_box_support,
+  .footer_box_order {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 600px) {
   .footer {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
   }
   .footer_box_rights, .footer_box_order,
   .footer_box_support {
