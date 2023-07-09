@@ -833,10 +833,11 @@ span {
   .login {
     margin-top: 0px;
     width: 410px;
+    height: 650px;
+    gap: 10px;
   }
   .login_logo_cross {
     right: -100px;
-    top: -30px;
   }
 }
 
