@@ -358,6 +358,13 @@ span {
     }
 }
 
+.button_login {
+    text-decoration: none;
+    color:#3C4852;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .service_benefits {
     display: flex;
     flex-direction: column;
@@ -754,9 +761,16 @@ span {
             border-radius: 10px;
             background: #FFCC80;
             border: 0px;
-            color: #3C4852;
-            font-size: 14px;
-            font-weight: 800;
+            transition: 1000ms ease;
+            & a {
+                text-decoration: none;
+                color: #3C4852;
+                font-size: 14px;
+                font-weight: 800;
+            }
+            &:hover {
+                transform: scale(115%);
+            }
         }
         &_right {
             width: 164px;
@@ -767,6 +781,16 @@ span {
             font-size: 14px;
             font-weight: 800;
             background-color: white;
+            transition: 1000ms ease;
+            & a {
+                text-decoration: none;
+                color: #3C4852;
+                font-size: 14px;
+                font-weight: 800;
+            }
+            &:hover {
+                transform: scale(115%);
+            }
         }
     }
     &_another {
@@ -776,12 +800,59 @@ span {
         justify-content: center;
         align-items: center;
         margin-top: 41px;
+        &_link {
+            color: #3C4852;
+            font-size: 18px;
+            font-weight: 800;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
         &_line {
             margin-bottom: 5px;
         }
     }
     &_links {
         margin-top: 37px;
-
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+        &_social {
+            transition: 1000ms ease;
+            &:hover {
+                transform: scale(115%);
+            }
+        }
+    }
+    &_mail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 306px;
+        height: 54px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: 1px solid #E5E5E5;
+        color: 16px;
+        font-weight: 400;
+        &_text {
+        outline: none;
+        border: none;
+        }
+    }
+    &_complete {
+        margin-top: 34px;
+        & button {
+            width: 306px;
+            height: 60px;
+            border-radius: 10px;
+            background: #FFCC80;
+            border: 0px;
+            color: #3C4852;
+            font-size: 14px;
+            font-weight: 800;
+        }
     }
 }

@@ -339,6 +339,13 @@ span {
   font-weight: 800;
 }
 
+.button_login {
+  text-decoration: none;
+  color: #3C4852;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .service_benefits {
   display: flex;
   flex-direction: column;
@@ -728,9 +735,16 @@ span {
   border-radius: 10px;
   background: #FFCC80;
   border: 0px;
+  transition: 1000ms ease;
+}
+.login_buttons_left a {
+  text-decoration: none;
   color: #3C4852;
   font-size: 14px;
   font-weight: 800;
+}
+.login_buttons_left:hover {
+  transform: scale(115%);
 }
 .login_buttons_right {
   width: 164px;
@@ -741,6 +755,16 @@ span {
   font-size: 14px;
   font-weight: 800;
   background-color: white;
+  transition: 1000ms ease;
+}
+.login_buttons_right a {
+  text-decoration: none;
+  color: #3C4852;
+  font-size: 14px;
+  font-weight: 800;
+}
+.login_buttons_right:hover {
+  transform: scale(115%);
 }
 .login_another {
   display: flex;
@@ -750,11 +774,59 @@ span {
   align-items: center;
   margin-top: 41px;
 }
+.login_another_link {
+  color: #3C4852;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.login_another_link:hover {
+  text-decoration: underline;
+}
 .login_another_line {
   margin-bottom: 5px;
 }
 .login_links {
   margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+}
+.login_links_social {
+  transition: 1000ms ease;
+}
+.login_links_social:hover {
+  transform: scale(115%);
+}
+.login_mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 306px;
+  height: 54px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+  color: 16px;
+  font-weight: 400;
+}
+.login_mail_text {
+  outline: none;
+  border: none;
+}
+.login_complete {
+  margin-top: 34px;
+}
+.login_complete button {
+  width: 306px;
+  height: 60px;
+  border-radius: 10px;
+  background: #FFCC80;
+  border: 0px;
+  color: #3C4852;
+  font-size: 14px;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=styles.css.map */
