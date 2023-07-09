@@ -857,15 +857,17 @@ span {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .login {
         margin-top: 0px;
-        width: 410px;
-        height: 650px;
+        width: 100vh;
+        height: 100vh;
         gap: 10px;
+        border-radius: 0px;
         &_logo{
             &_cross {
                 right: -100px;
+                top: -50px;
             }
         }
     }
