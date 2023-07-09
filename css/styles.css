@@ -663,6 +663,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #8E8D8D;
 }
 
 .login {
@@ -676,6 +677,84 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.login_logo {
+  position: relative;
+}
+.login_logo_cross {
+  position: absolute;
+  right: -120px;
+  top: -30px;
+}
+.login_user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 306px;
+  height: 54px;
+  margin-top: 37px;
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+  color: 16px;
+  font-weight: 400;
+}
+.login_user_text {
+  outline: none;
+  border: none;
+}
+.login_password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 306px;
+  height: 54px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+  color: 16px;
+  font-weight: 400;
+}
+.login_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-top: 34px;
+}
+.login_buttons_left {
+  width: 128px;
+  height: 60px;
+  border-radius: 10px;
+  background: #FFCC80;
+  border: 0px;
+  color: #3C4852;
+  font-size: 14px;
+  font-weight: 800;
+}
+.login_buttons_right {
+  width: 164px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #FFCC80;
+  color: #3C4852;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: white;
+}
+.login_another {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 41px;
+}
+.login_another_line {
+  margin-bottom: 5px;
+}
+.login_links {
+  margin-top: 37px;
 }
 
 /*# sourceMappingURL=styles.css.map */

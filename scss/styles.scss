@@ -691,6 +691,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #8E8D8D;
 }
 
 .login {
@@ -704,4 +705,83 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &_logo{
+        position: relative;
+        &_cross {
+            position: absolute;
+            right: -120px;
+            top: -30px
+        }
+    }
+    &_user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 306px;
+        height: 54px;
+        margin-top: 37px;
+        border-radius: 10px;
+        border: 1px solid #E5E5E5;
+        color: 16px;
+        font-weight: 400;
+        &_text {
+            outline: none;
+            border: none;
+        }
+    }
+    &_password {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 306px;
+        height: 54px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: 1px solid #E5E5E5;
+        color: 16px;
+        font-weight: 400;
+    }
+    &_buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+        margin-top: 34px;
+        &_left {
+            width: 128px;
+            height: 60px;
+            border-radius: 10px;
+            background: #FFCC80;
+            border: 0px;
+            color: #3C4852;
+            font-size: 14px;
+            font-weight: 800;
+        }
+        &_right {
+            width: 164px;
+            height: 60px;
+            border-radius: 10px;
+            border: 1px solid #FFCC80;
+            color: #3C4852;
+            font-size: 14px;
+            font-weight: 800;
+            background-color: white;
+        }
+    }
+    &_another {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 41px;
+        &_line {
+            margin-bottom: 5px;
+        }
+    }
+    &_links {
+        margin-top: 37px;
+
+    }
 }
