@@ -16,4 +16,21 @@ window.addEventListener("DOMContentLoaded", function() {
         menu.classList.add("hidden");
     });
 
+    document.querySelectorAll(".button_login").forEach(function(button){
+        button.addEventListener("click", function(){
+            document.querySelector(".login_modal").classList.remove("hidden");
+            requestAnimationFrame(function(){
+                document.querySelector(".login_modal").classList.add("modal_overlay_active");
+            });
+            
+        });
+    });
+
+    document.querySelector(".login_close_btn").addEventListener("click", function(){
+        document.querySelector(".login_modal").classList.remove("modal_overlay_active");
+
+        setTimeout(function(){
+            document.querySelector(".login_modal").classList.add("hidden");
+        }, 200)
+    });
 });

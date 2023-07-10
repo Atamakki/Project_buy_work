@@ -665,6 +665,37 @@ span {
   }
 }
 /* LOGIN TITLE*/
+.hidden {
+  display: none !important;
+}
+
+.modal_overlay {
+  background-color: rgba(60, 72, 82, 0);
+  transition: all 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8E8D8D;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.modal_overlay.modal_overlay_active {
+  background-color: rgba(60, 72, 82, 0.9333333333);
+}
+
+.login {
+  opacity: 0;
+}
+
+.modal_overlay_active .login {
+  opacity: 1;
+}
+
 .login_page {
   background-color: #3C4852;
   display: flex;
@@ -676,7 +707,6 @@ span {
 .login {
   margin-top: 200px;
   width: 450px;
-  height: 593px;
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 20px 100px 0px rgba(18, 24, 32, 0.05);
@@ -685,25 +715,23 @@ span {
   justify-content: center;
   align-items: center;
 }
+.login_top {
+  text-align: right;
+  width: 100%;
+}
 .login_logo {
   position: relative;
-}
-.login_logo_cross {
-  position: absolute;
-  right: -120px;
-  top: -30px;
 }
 .login_user {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 306px;
+  width: 100%;
   height: 54px;
   margin-top: 37px;
   border-radius: 10px;
   border: 1px solid #E5E5E5;
-  color: 16px;
   font-weight: 400;
 }
 .login_user_text {
@@ -715,7 +743,7 @@ span {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 306px;
+  width: 100%;
   height: 54px;
   margin-top: 15px;
   border-radius: 10px;
@@ -729,42 +757,31 @@ span {
   gap: 14px;
   margin-top: 34px;
 }
-.login_buttons_left {
-  width: 128px;
-  height: 60px;
-  border-radius: 10px;
-  background: #FFCC80;
-  border: 0px;
-  transition: 1000ms ease;
-}
-.login_buttons_left a {
-  text-decoration: none;
-  color: #3C4852;
+.login_buttons_btn {
   font-size: 14px;
   font-weight: 800;
-}
-.login_buttons_left:hover {
-  transform: scale(115%);
-}
-.login_buttons_right {
-  width: 164px;
   height: 60px;
   border-radius: 10px;
   border: 1px solid #FFCC80;
   color: #3C4852;
-  font-size: 14px;
-  font-weight: 800;
-  background-color: white;
   transition: 1000ms ease;
 }
-.login_buttons_right a {
+.login_buttons_btn a {
   text-decoration: none;
   color: #3C4852;
   font-size: 14px;
   font-weight: 800;
 }
-.login_buttons_right:hover {
+.login_buttons_btn:hover {
   transform: scale(115%);
+}
+.login_buttons_left {
+  width: 128px;
+  background: #FFCC80;
+}
+.login_buttons_right {
+  width: 164px;
+  background-color: white;
 }
 .login_another {
   display: flex;
@@ -836,10 +853,6 @@ span {
     height: 100vh;
     gap: 10px;
     border-radius: 0px;
-  }
-  .login_logo_cross {
-    right: -100px;
-    top: -50px;
   }
 }
 

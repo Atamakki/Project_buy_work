@@ -13,7 +13,7 @@
             <div class="menu-leftside">
                 <nav>
                     <ul class='main-nav'>
-                        <li><button class="main_header_right_item main_header_right_button"><a class="button_login" href="./login.html">Войти</a></button></li>
+                        <li><button class="main_header_right_item main_header_right_button button_login">Войти</button></li>
                         <li>
                             <div class="main_header_right_item main_header_right_support">
                                 <div><img src="./images/cloud.svg" width="26" height="26"></div>
@@ -71,7 +71,7 @@
                         <div><img src="./images/cloud.svg" width="26" height="26"></div>
                         <div><a href="#">Поддержка</a></div>
                     </div>
-                    <div><button class="main_header_right_item main_header_right_button"><a class="button_login" href='./login.html'>Войти</a></button></div>
+                    <div><button class="main_header_right_item main_header_right_button button_login">Войти</button></div>
                 </div>
             </header>
         </div>
@@ -212,6 +212,41 @@
                         <div><button class="footer_box_order">Разместить заказ</button></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_overlay hidden login_modal">
+        <div class="login">
+            <div class="login_top">
+                <a class="login_close_btn"><img class="login_logo_cross" src='./images/login_close_button.png' width="19" height="19"></a>
+            </div>
+            <div class="login_logo">
+                <img class="login_logo_owl" src="./images/logo.svg" width="153" heigth="59">
+               
+            </div>
+            <div class="login_user">
+                <input class="login_user_text" type="text" name="login" placeholder="Логин">
+                <img src="./images/avatar_login.png" width="20" height="20">
+            </div>
+            <div class="login_password">
+                <input class="login_user_text" type="text" name="password" placeholder="Пароль">
+                <img src="./images/lock.png" width="20" height="20">
+            </div>
+            <div class="login_buttons">
+                <button class='login_buttons_btn login_buttons_left'><a href="#">ВОЙТИ</a></button>
+                <button class='login_buttons_btn login_buttons_right'><a href="./registration.html">РЕГИСТРАЦИЯ</a></button>
+            </div>
+            <div class="login_another">
+                <div><img class="login_another_line" src="./images/login_line.png" width="60" height="1"></div>
+                <div><a class="login_another_link" href='#'>Или войти через</a></div>
+                <div><img class="login_another_line" src="./images/login_line.png" width="60" height="1"></div>
+            </div>
+            <div class="login_links">
+                <a class="login_links_social" href="#"><img class="login_links_social" src="./images/facebook.svg" width="51" height="51"></a>
+                <a class="login_links_social" href="#"><img class="login_links_social" src="./images/vk.svg" width="51" height="51"></a>
+                <a class="login_links_social" href="#"><img class="login_links_social" src="./images/google.svg" width="51" height="51"></a>
+                <a class="login_links_social" href="#"><img class="login_links_social" src="./images/viber.svg" width="51" height="51"></a>
+                <a class="login_links_social" href="#"><img  src="./images/telegram.svg" width="51" height="51"></a>
             </div>
         </div>
     </div>
