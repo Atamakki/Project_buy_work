@@ -73,7 +73,6 @@ ul {
 
 .column {
     width: 100%;
-    
 }
 
 .row {
@@ -885,5 +884,151 @@ span {
         gap: 10px;
         border-radius: 0px;
     }
+}
 
+
+
+/* PROFILE PAGE */
+
+.profile_column {
+    background-color: #3C4852;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+    
+    &_actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 15px 0px;
+        height: 100%;
+        &_top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            &_balance {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 14px;
+            }
+            &_amount {
+                min-width: 101px;
+                color: #3C4852;
+                height: 39px;
+                font-size: 20px;
+                font-weight: 700;
+                border-radius: 10px;
+                border: 1px solid #FFCC80;
+                background: #FFCC80;
+            }
+        }
+        &_bottom {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            &_button {
+                min-width: 102px;
+                height: 30px;
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.7px;
+                border-radius: 6px;
+                border: 1px solid rgba(231, 231, 231, 0.40);
+                background-color: #3C4852;;
+            }
+        }
+    }
+    &_settings {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 11px;
+        margin: 15px 0px;
+        height: 100%;
+    }
+    &_order {
+        min-width: 193px;
+        &_button {
+        font-size: 16px;
+        font-weight: 700;
+        color: #3C4852;
+        width: 100%;
+        height: 58px;
+        border-radius: 10px;
+        background: #FFCC80; 
+        letter-spacing: 0.9px;
+        margin: 15px 0px;
+        }   
+    }
+    &_exit {
+        min-width: 97px;
+        &_button {
+            height: 57px;
+        color: #C3BFBF;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.9px;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #E7E7E7;
+        background-color: #3C4852;
+        margin: 15px 0px;
+        }
+    }
+}
+
+.row_profile {
+    max-width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.calendarclockimg {
+    width: 17px;
+    height: 17px;
+}
+
+.content {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &_top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_main {
+        display: flex;
+        flex-direction: row;
+    }
+    &_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &_left {
+            display: flex;
+            flex-direction: column;
+            min-width: 505px;
+        }
+        &_right {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
