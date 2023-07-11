@@ -849,7 +849,7 @@ span {
 }
 
 @media (max-width: 1000px) {
-  .login {
+  .login, .registration {
     margin-top: 0px;
     width: 100vh;
     height: 100vh;
