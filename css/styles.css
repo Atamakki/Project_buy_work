@@ -692,20 +692,20 @@ span {
   opacity: 0;
 }
 
+.registration {
+  opacity: 0;
+}
+
 .modal_overlay_active .login {
   opacity: 1;
 }
 
-.login_page {
-  background-color: #3C4852;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #8E8D8D;
+.modal_overlay_active .registration {
+  opacity: 1;
 }
 
-.login {
-  margin-top: 200px;
+.login, .registration {
+  margin-top: 180px;
   width: 450px;
   border-radius: 10px;
   background: #FFF;
@@ -714,36 +714,38 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 20px;
 }
-.login_top {
+.login_top, .registration_top {
   text-align: right;
+  padding-right: 20px;
   width: 100%;
 }
-.login_logo {
+.login_logo, .registration_logo {
   position: relative;
 }
-.login_user {
+.login_user, .registration_user {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 70%;
   height: 54px;
   margin-top: 37px;
   border-radius: 10px;
   border: 1px solid #E5E5E5;
   font-weight: 400;
 }
-.login_user_text {
+.login_user_text, .registration_user_text {
   outline: none;
   border: none;
 }
-.login_password {
+.login_password, .registration_password {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 70%;
   height: 54px;
   margin-top: 15px;
   border-radius: 10px;
@@ -751,13 +753,13 @@ span {
   color: 16px;
   font-weight: 400;
 }
-.login_buttons {
+.login_buttons, .registration_buttons {
   display: flex;
   flex-direction: row;
   gap: 14px;
   margin-top: 34px;
 }
-.login_buttons_btn {
+.login_buttons_btn, .registration_buttons_btn {
   font-size: 14px;
   font-weight: 800;
   height: 60px;
@@ -766,24 +768,24 @@ span {
   color: #3C4852;
   transition: 1000ms ease;
 }
-.login_buttons_btn a {
+.login_buttons_btn a, .registration_buttons_btn a {
   text-decoration: none;
   color: #3C4852;
   font-size: 14px;
   font-weight: 800;
 }
-.login_buttons_btn:hover {
+.login_buttons_btn:hover, .registration_buttons_btn:hover {
   transform: scale(115%);
 }
-.login_buttons_left {
+.login_buttons_left, .registration_buttons_left {
   width: 128px;
   background: #FFCC80;
 }
-.login_buttons_right {
+.login_buttons_right, .registration_buttons_right {
   width: 164px;
   background-color: white;
 }
-.login_another {
+.login_another, .registration_another {
   display: flex;
   flex-direction: row;
   gap: 25px;
@@ -791,31 +793,31 @@ span {
   align-items: center;
   margin-top: 41px;
 }
-.login_another_link {
+.login_another_link, .registration_another_link {
   color: #3C4852;
   font-size: 18px;
   font-weight: 800;
   text-decoration: none;
 }
-.login_another_link:hover {
+.login_another_link:hover, .registration_another_link:hover {
   text-decoration: underline;
 }
-.login_another_line {
+.login_another_line, .registration_another_line {
   margin-bottom: 5px;
 }
-.login_links {
+.login_links, .registration_links {
   margin-top: 37px;
   display: flex;
   flex-direction: row;
   gap: 13px;
 }
-.login_links_social {
+.login_links_social, .registration_links_social {
   transition: 1000ms ease;
 }
-.login_links_social:hover {
+.login_links_social:hover, .registration_links_social:hover {
   transform: scale(115%);
 }
-.login_mail {
+.login_mail, .registration_mail {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -828,14 +830,14 @@ span {
   color: 16px;
   font-weight: 400;
 }
-.login_mail_text {
+.login_mail_text, .registration_mail_text {
   outline: none;
   border: none;
 }
-.login_complete {
+.login_complete, .registration_complete {
   margin-top: 34px;
 }
-.login_complete button {
+.login_complete button, .registration_complete button {
   width: 306px;
   height: 60px;
   border-radius: 10px;
