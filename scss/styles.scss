@@ -996,21 +996,48 @@ span {
     margin: 0 auto;
 }
 
+.column_profile {
+    width: 100%;
+    background-color: #F3EEEE;
+}
+
 .calendarclockimg {
     width: 17px;
     height: 17px;
 }
 
 .content {
-    margin-top: 65px;
+    padding: 85px 0px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    &_main {
+        display: flex;
+        flex-direction: column !important;
+        gap: 15px;
+    }
     &_top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        &_left {
+            color: #3C4852;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        &_right {
+            display: flex;
+            flex-direction: row;
+            gap: 17px;
+            color: #3C4852;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+            border-radius: 10px;
+            border: 1px solid #FFCC80;
+            padding: 18px 26px;
+        }
     }
     &_main {
         display: flex;
@@ -1021,14 +1048,60 @@ span {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 380px;
+        padding: 20px 40px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        border: 1px solid #F3EEEE;
+        box-shadow: 0px 20px 100px 0px rgba(18, 24, 32, 0.05);
         &_left {
             display: flex;
             flex-direction: column;
-            min-width: 505px;
+            justify-content: left;
+            gap: 6px;
+            &_title {
+                color: #3C4852;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            &_text {
+                color: #8E8D8D;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 24px;
+            }
         }
         &_right {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            min-width: 140px;
+            gap: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #8E8D8D;
+            &_textgreen {
+                color: #66B87A;
+            }
+            &_textyellow {
+                color: #E1B26C;
+            }
+            &_process {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+                
+            }
+            &_date {
+                margin-left: 29px;
+            }
         }
     }
+}
+
+.pfooter {
+    display: flex;
+    flex-direction: row;
 }
