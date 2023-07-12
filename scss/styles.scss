@@ -902,7 +902,6 @@ span {
     font-weight: 400;
     justify-content: space-between;
     align-items: center;
-    
     &_actions {
         display: flex;
         flex-direction: column;
@@ -958,6 +957,12 @@ span {
         gap: 11px;
         margin: 15px 0px;
         height: 100%;
+        & a {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+        }
     }
     &_order {
         min-width: 193px;

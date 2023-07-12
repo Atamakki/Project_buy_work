@@ -927,6 +927,12 @@ span {
   margin: 15px 0px;
   height: 100%;
 }
+.profile_settings a {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
 .profile_order {
   min-width: 193px;
 }
