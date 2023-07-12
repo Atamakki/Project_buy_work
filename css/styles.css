@@ -1080,6 +1080,7 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 0px;
+  /* SETTINGS PAGE AND PREVIOUS HEADER AND FOOTER */
 }
 .pfooter_pay {
   color: #FFF;
@@ -1135,6 +1136,135 @@ span {
   border-radius: 10px;
   background: #FFCC80;
   padding: 18px 25px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 55px 0px;
+  width: 100%;
+}
+.settings_item {
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #F3EEEE;
+  padding: 25px 50px;
+}
+.settings_top {
+  color: #3C4852;
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 10px 10px 0px 0px;
+}
+.settings_posttop {
+  background-color: #FFFFFF;
+  color: #3C4852;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.settings_posttop_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.settings_posttop_item_edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  min-width: 280px;
+}
+.settings_posttop_item_edit_name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.settings_posttop_item_edit_mail {
+  font-size: 16px;
+  font-weight: 700;
+}
+.settings_posttop_item_edit img {
+  background-color: #3C4852;
+  padding: 8px;
+  border-radius: 7px;
+}
+.settings_middle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: left;
+}
+.settings_middle_top {
+  color: #3C4852;
+  font-size: 24px;
+  font-weight: 600;
+}
+.settings_middle_text {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #DBD5D5;
+  width: 25%;
+  height: 55px;
+  padding: 0px 20px;
+  color: #8E8D8D;
+  font-size: 16px;
+  font-weight: 400;
+}
+.settings_middle button {
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  border-radius: 10px;
+  background: #66B87A;
+  border: 0px;
+  padding: 17px 39px;
+}
+.settings_bot {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-radius: 0px 0px 10px 10px;
+}
+.settings_bot_inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.settings_bot_inputs_password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid #DBD5D5;
+}
+.settings_bot_inputs_item {
+  outline: none;
+  border: none;
+  color: #8E8D8D;
+  font-size: 16px;
+  font-weight: 400;
+}
+.settings button {
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  border-radius: 10px;
+  background: #66B87A;
+  border: 0px;
+  padding: 17px 39px;
+}
+
+.box_settings {
+  padding: 5px 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
