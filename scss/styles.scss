@@ -1104,4 +1104,65 @@ span {
 .pfooter {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    &_pay {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+    }
+    &_payments {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        &_item {
+            border-radius: 14px;
+            border: 1px solid #8E8D8D;
+        }
+        &_item img {
+            padding: 1px 15px;
+        }
+        &_yandex {
+            padding: 6px 15px !important;
+        }
+        &_webmoney {
+            margin-top: 3px;
+            padding: 8px 19px !important;
+        }
+    }
+    &_rights {
+        color: #8E8D8D;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+    }
+    &_support {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 13px;
+        & a {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+            text-decoration: none;
+        }
+    }
+    &_order {
+        & button {
+            color: #3C4852;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+            border-radius: 10px;
+            background: #FFCC80;
+            padding: 18px 25px;
+        }
+    }
 }

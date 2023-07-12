@@ -1070,6 +1070,65 @@ span {
 .pfooter {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+.pfooter_pay {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+.pfooter_payments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.pfooter_payments_item {
+  border-radius: 14px;
+  border: 1px solid #8E8D8D;
+}
+.pfooter_payments_item img {
+  padding: 1px 15px;
+}
+.pfooter_payments_yandex {
+  padding: 6px 15px !important;
+}
+.pfooter_payments_webmoney {
+  margin-top: 3px;
+  padding: 8px 19px !important;
+}
+.pfooter_rights {
+  color: #8E8D8D;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+.pfooter_support {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+}
+.pfooter_support a {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-decoration: none;
+}
+.pfooter_order button {
+  color: #3C4852;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  border-radius: 10px;
+  background: #FFCC80;
+  padding: 18px 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */
