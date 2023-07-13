@@ -1341,10 +1341,42 @@ span {
 /* PLACING ORDER PAGE */
 
 .order {
+    &_title {
+        color: #3C4852;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: left;
+    }
     &_main {
         display: flex;
         flex-direction: row;
+        &_about {
+            display: flex;
+            flex-direction: column;
+        }
+        &__type {
+            display: flex;
+            flex-direction: column;
+            &_title {
+                color: #3C4852;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &_list {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        &__deadline {
+            display: flex;
+            flex-direction: row;
+            &_date {
+                display: flex;
+                flex-direction: row;
+            }
+        }
     }
+    
 }
 
 .order_main__calendar {
