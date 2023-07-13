@@ -42,10 +42,12 @@ window.addEventListener("DOMContentLoaded", function() {
         });
 
     document.querySelector(".registration_close_btn").addEventListener("click", function() {
-        document.querySelector(".registration_modal").classList.remove("modal_overlay");
+        document.querySelector(".registration").classList.add("hidden")
+        document.querySelector(".registration_modal").classList.remove("modal_overlay_active");
 
         setTimeout(function() {
+            document.querySelector(".registration").classList.remove("hidden");
             document.querySelector(".registration_modal").classList.add("hidden");
-        });
+        }, 200);
     });
 });

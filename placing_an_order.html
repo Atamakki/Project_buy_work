@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="./font/Panton-Trial-Black.ttf" rel="stylesheet">
+</head>
+<body>
+    <div class="column profile_column">
+        <div class="row">
+            <div class="profile">
+                <div class="profile_owl_logo">
+                    <a href='./index.html'><img src="./images/logo_profile.svg" width="153" height="59"></a>
+                </div>
+                <div class="profile_actions">
+                    <div class="profile_actions_top left_border">
+                        <div class="profile_actions_top_balance">
+                            <div><img src="./images/money_bag.svg" width="24" height="24"></div>
+                            <div>Баланс:</div>
+                        </div>
+                        <div><button class="profile_actions_top_amount">1234 Р</button></div>
+                    </div>
+                    <div class="profile_actions_bottom">
+                        <div><button class="profile_actions_bottom_button">Пополнить</button></div>
+                        <div><button class="profile_actions_bottom_button">Вывести</button></div>
+                    </div>
+                </div>
+                <div class="profile_settings link_border">
+                    <div><a href="./my_profile.html"><img src="./images/support.svg" width="26" height="26"></a></div>
+                    <div class="profile_settings_text"><a href="./my_profile.html">Поддержка</a></div>
+                </div>
+                <div class="profile_settings link_border">
+                    <div><img src="./images/orders.svg" width="25" height="25"></div>
+                    <div class="profile_settings_text">Мои заказы</div>
+                </div>
+                <div class="profile_settings link_border">
+                    <div><a href="./settings_profile_page.html"><img src="./images/settings.svg" width="27" height="27"></a></div>
+                    <div class="profile_settings_text"><a href="./settings_profile_page.html">Настройки</a></div>
+                </div>
+                <div class="profile_order left_border">
+                    <button class="profile_order_button">Разместить заказ</button>
+                </div>
+                <div class="profile_photo">
+                    <img src="./images/profile_photo.png" width="57" height="57">
+                </div>
+                <div class="profile_exit">
+                    <button class="profile_exit_button">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column_profile">
+        <div class="row_profile">
+            <div class="order">
+                <div class="order_title">
+                    Размещение заказа
+                </div>
+                <div class="order_main">
+                    <div class="order_main_about">
+                        <div class="order_main__type">
+                            <div class="order_main__type_title">Тип работы</div>
+                            <div class="order_main__type_list">
+                                <div><input class="order_main__type_input" type="text" name="type_of_order" placeholder="Выпадающий список"></div>
+                                <div><img src="./images/arrow_bot.svg" width="14" height="14"></div>
+                            </div>
+                        </div>
+                        <div class="order_main__type">
+                            <div class="order_main__type_title">Предмет</div>
+                            <div><input class="order_main__type_input" type="text" name="type_of_subject" placeholder="Введите ваш предмет"></div>
+                        </div>
+                        <div class="order_main__type">
+                            <div class="order_main__type_title">Название</div>
+                            <div><input class="order_main__type_input" type="text" name="type_of_name" placeholder="Введите название"></div>
+                        </div>
+                        <div class="order_main__deadline">
+                            <div class="order_main__deadline_title">Срок сдачи</div>
+                            <div class="order_main__deadline_date">
+                                <div><img src="./images/arrow_left.svg" width="14" height="15"></div>
+                                <div>Октябрь 2021</div>
+                                <div><img src="./images/arrow_left.svg" width="14" height="15"></div>
+                            </div>
+                        </div>
+                        <div class="order_main__calendar">
+                            <div>ПН</div><div>ВТ</div><div>СР</div><div>ЧТ</div><div>ПТ</div><div>СБ</div><div>ВС</div>
+                            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div>
+                            <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div>
+                            <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div>
+                            <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+                            <div>29</div><div>30</div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+                        </div>
+                        <div class="order_main__type">
+                            <div class="order_main__type_title">Цена</div>
+                            <div><input class="order_main__type_input" type="text" name="type_of_price" placeholder="Введите Вашу цену"></div>
+                        </div>
+                        <div class="order_main__type">
+                            <div class="order_main__type_title">Требуемая оригинальность</div>
+                            <div><input class="order_main__type_input" type="text" name="type_of_originality" placeholder="Требуемая оригинальность"></div>
+                        </div>
+                        <div>
+                            <button class="order_main__button">Разместить заказ</button>
+                        </div>
+                    </div>
+                    <div class="order_main_description">
+                        <div class="order_main__work">
+                            <div class="order_main__work_title">Требуемая оригинальность</div>
+                            <div><input class="order_main__work_input" type="text" name="type_of_work" placeholder=""></div>
+                        </div>
+                        <div>
+                            <button>
+                                <div>
+                                    <div><img src="./images/attach_clip.svg" width="14" height="14"></div>
+                                    <div>Добавить файл</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="order_main__added">Добавленные файлы</div>
+                        <div class="order_main__files">
+                            <div class="order_main__files_left">
+                                <div><img src="./images/document.svg" width="19" height="19"></div>
+                                <div class="order_main__files_left_text">1. Методичка по предмету ИГ</div>
+                                <div><img src="./images/close_order.svg" width="11" height="11"></div>
+                            </div>
+                            <div class="order_main__files_left">
+                                <div><img src="./images/document.svg" width="19" height="19"></div>
+                                <div class="order_main__files_left_text">Пример контрольной работ</div>
+                                <div><img src="./images/close_order.svg" width="11" height="11"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column profile_column">
+        <div class="row">
+            <div class="pfooter">
+                <div class="pfooter_pay">
+                    Способы оплаты
+                </div>
+                <div class="pfooter_payments">
+                    <div class="pfooter_payments_item"><img src="./images/visa.png" width="50" height="50"></div>
+                    <div class="pfooter_payments_item"><img src="./images/mastercard.svg" width="50" height="50"></div>
+                    <div class="pfooter_payments_item"><img class="pfooter_payments_yandex" src="./images/yandex1.png" width="80" height="40"></div>
+                    <div class="pfooter_payments_item"><img class="pfooter_payments_webmoney" src="./images/webmoney1.png" width="95" height="33"></div>
+                </div>
+                <div class="pfooter_rights">
+                    Права защищены и опасны
+                </div>
+                <div class="pfooter_support">
+                    <div><img src="./images/cloud.svg" width="26" height="26"></div>
+                    <div><a href="#">Поддержка</a></div>
+                </div>
+                <div class="pfooter_order">
+                    <button>Разместить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

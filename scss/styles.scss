@@ -8,6 +8,7 @@ html, body {
     padding: 0px;
     font-family: 'Panton';
     overflow-x: hidden;
+    color: #3C4852;
 }
 
 .main_title {
@@ -24,6 +25,10 @@ html, body {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -950,6 +955,7 @@ span {
                 &:hover {
                     background-color: #E1B26C;
                     color: #3C4852;
+                    transform: scale(105%);
                 }
             }
         }
@@ -995,7 +1001,8 @@ span {
             margin: 15px 0px;
             &:hover {
                 background-color: #E1B26C;
-                color: #3C4852;
+                color: #FFF;
+                transform: scale(105%);
             }
         }
     }
@@ -1031,7 +1038,7 @@ span {
     height: 17px;
 }
 
-.content {
+.tickets {
     padding: 85px 0px;
     display: flex;
     flex-direction: column;
@@ -1062,11 +1069,13 @@ span {
             border-radius: 10px;
             border: 1px solid #FFCC80;
             padding: 18px 26px;
+            cursor: pointer;
+            &:hover {
+                background-color: #FFCC80;
+                color: #FFF;
+                transform: scale(105%);
+            }
         }
-    }
-    &_main {
-        display: flex;
-        flex-direction: row;
     }
     &_box {
         display: flex;
@@ -1078,12 +1087,14 @@ span {
         background-color: #FFFFFF;
         border-radius: 10px;
         border: 1px solid #F3EEEE;
+        
         box-shadow: 0px 20px 100px 0px rgba(18, 24, 32, 0.05);
         &_left {
             display: flex;
             flex-direction: column;
             justify-content: left;
             gap: 6px;
+            text-decoration: none;
             &_title {
                 color: #3C4852;
                 font-size: 22px;
@@ -1325,4 +1336,22 @@ span {
 
 .box_settings {
     padding: 5px 15px;
+}
+
+/* PLACING ORDER PAGE */
+
+.order {
+    &_main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.order_main__calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 8px;
+    column-gap: 5px;
+    max-width: 500px;
+    max-height: 290px;
 }
