@@ -900,15 +900,15 @@ span {
     color: #FFF;
     font-size: 18px;
     font-weight: 400;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 15px;
     &_actions {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        margin: 15px 0px;
         height: 100%;
+        gap: 8px;
         &_top {
             display: flex;
             flex-direction: row;
@@ -946,7 +946,11 @@ span {
                 letter-spacing: 0.7px;
                 border-radius: 6px;
                 border: 1px solid rgba(231, 231, 231, 0.40);
-                background-color: #3C4852;;
+                background-color: #3C4852;
+                &:hover {
+                    background-color: #E1B26C;
+                    color: #3C4852;
+                }
             }
         }
     }
@@ -955,8 +959,6 @@ span {
         flex-direction: row;
         align-items: center;
         gap: 11px;
-        margin: 15px 0px;
-        height: 100%;
         & a {
             color: #FFF;
             font-size: 18px;
@@ -982,16 +984,34 @@ span {
         min-width: 97px;
         &_button {
             height: 57px;
-        color: #C3BFBF;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 0.9px;
-        width: 100%;
-        border-radius: 10px;
-        border: 1px solid #E7E7E7;
-        background-color: #3C4852;
-        margin: 15px 0px;
+            color: #C3BFBF;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.9px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #E7E7E7;
+            background-color: #3C4852;
+            margin: 15px 0px;
+            &:hover {
+                background-color: #E1B26C;
+                color: #3C4852;
+            }
         }
+    }
+}
+
+.link_border {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 33px 15px;
+    &:hover {
+        transform: translate(0, 0.25em);
+        background-color: #3C485200;
+    }
+    &:active {
+        transform: translate(0em, 0.5em);
     }
 }
 
