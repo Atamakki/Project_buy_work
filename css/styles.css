@@ -167,7 +167,7 @@ span {
   position: fixed;
   top: 0;
   right: 0;
-  width: 375px;
+  width: 400px;
   min-height: 350px;
   box-sizing: border-box;
   padding: 60px 20px;
@@ -175,7 +175,7 @@ span {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
-  transition: margin-right 300ms ease;
+  transition: margin-right 500ms ease;
   margin-right: 0;
   opacity: 1;
   z-index: 5;
@@ -909,6 +909,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 .profile_actions {
   display: flex;
@@ -928,6 +929,9 @@ span {
   flex-direction: row;
   align-items: center;
   gap: 14px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
 }
 .profile_actions_top_amount {
   min-width: 101px;
@@ -974,6 +978,12 @@ span {
   font-weight: 400;
   text-decoration: none;
 }
+.profile_settings_text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
 .profile_order {
   min-width: 193px;
 }
@@ -1007,6 +1017,71 @@ span {
   background-color: #E1B26C;
   color: #FFF;
   transform: scale(105%);
+}
+
+/* MOBILE PROFILE MENU */
+.profile_mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.mobile-menu-profile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  min-height: 700px;
+  box-sizing: border-box;
+  padding: 60px 20px;
+  background-color: #3C4852;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  transition: margin-right 300ms ease;
+  margin-right: 0;
+  opacity: 1;
+  z-index: 5;
+}
+
+.mobile-menu-profile.hidden {
+  margin-right: -375px;
+  opacity: 0;
+}
+
+.profile_menu {
+  display: flex;
+  flex-direction: column;
+}
+.profile_menu_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.mobile_profile_actions {
+  align-items: start !important;
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .profile {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .profile_mobile {
+    display: none;
+  }
+}
+/* MOBILE PROFILE MENU */
+.dogmail {
+  font-family: "Courier New", Courier, monospace;
+  color: #3C4852;
+  font-size: 22px;
 }
 
 .link_border {
@@ -1136,6 +1211,19 @@ span {
   margin-left: 29px;
 }
 
+@media (max-width: 1000px) {
+  .tickets_box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tickets_box_right {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .tickets_box_right_date {
+    margin-left: 0px;
+  }
+}
 .pfooter {
   display: flex;
   flex-direction: row;
