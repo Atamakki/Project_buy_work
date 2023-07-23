@@ -1341,49 +1341,189 @@ span {
 /* PLACING ORDER PAGE */
 
 .order {
+    padding: 54px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &_title {
         color: #3C4852;
         font-size: 26px;
         font-weight: 700;
         text-align: left;
+        background-color: #FFF;
+        text-align: left;
+        width: 100%;
+        padding: 20px 60px;
+        border-radius: 10px 10px 0px 0px;
+        border-bottom: 2px solid #F3EEEE;;
     }
     &_main {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        background-color: #FFF;
+        border-radius: 0px 0px 10px 10px;
+        width: 100%;
+        padding: 20px 60px;
         &_about {
             display: flex;
             flex-direction: column;
+            width: 50%;
+        }
+        &_description {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
         }
         &__type {
             display: flex;
             flex-direction: column;
             &_title {
                 color: #3C4852;
-                font-size: 16px;
-                font-weight: 600;
+                font-size: 18px;
+                font-weight: 900;
+                padding: 15px 0px;
             }
             &_list {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid #DBD5D5;
+                border-radius: 10px;
+                width: 100%;
+                height: 55px;
+                & input {
+                    outline: none;
+                    border: none;
+                    color: #8E8D8D;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-left: 35px;
+                }
+                & button {
+                    background-color: #FFF;
+                    border: none;
+                    padding-right: 25px;
+                    cursor: pointer;
+                }
+            }
+            &_input {
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                border: 1px solid #DBD5D5;
+                width: 100%;
+                height: 55px;
+                color: #8E8D8D;
+                font-size: 16px;
+                font-weight: 400;
+                &::placeholder {
+                    padding-left: 35px;
+                }
             }
         }
         &__deadline {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 21px 0px;
+            &_title {
+                color: #3C4852;
+                font-size: 18px;
+                font-weight: 600;
+            }
             &_date {
                 display: flex;
                 flex-direction: row;
+                gap: 17px;
+                border: 1px solid #DBD5D5;
+                border-radius: 10px;
+                padding: 12px 22px;
             }
         }
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            border: 0px;
+            background: #FFCC80;
+            width: 100%;
+            max-width: 289px;
+            height: 73px;
+            margin: 27px 0px;
+        }
+        &_description {
+            display: flex;
+            flex-direction: column;
+        }
+        &__work {
+            display: flex;
+            flex-direction: column;
+            &_title {
+                color: #3C4852;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 20px 0px;
+            }
+            & input {
+                min-height: 704px;
+                width: 100%;
+                outline: none;
+                border: none;
+                border:  1px solid #DBD5D5;
+                border-radius: 10px;
+            }
+        }
+        
     }
     
 }
 
+/* CALENDAR */
+
 .order_main__calendar {
+    padding: 30px 30px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     row-gap: 8px;
-    column-gap: 5px;
+    column-gap: 20px;
     max-width: 500px;
     max-height: 290px;
+    border: 1px solid #DBD5D5;
+    border-radius: 10px;
+    text-align: center;
+    color: #3C4852;
+    font-size: 15px;
+    font-weight: 900;
+    & div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        &:hover {
+            border-radius: 5px;
+            background: #FFCC80;
+        }
+    }
 }
+
+.date {
+    color: #8E8D8D !important;
+    font-weight: 400 !important;
+    &_big {
+        font-size: 16px;
+        &:hover {
+            background: #FFF !important;
+        }
+    }
+}
+
+/* CALENDAR */
