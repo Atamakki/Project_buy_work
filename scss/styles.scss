@@ -250,6 +250,13 @@ span {
             color: #3C4852;
             text-decoration: none;
             height: 35px;
+            transition: 1000ms ease;
+            & img {
+                margin-right: 10px;
+            }
+            &:hover {
+                transform: scale(110%);
+            }
         }
         &_support {
             font-weight: 700;
@@ -326,6 +333,7 @@ span {
             font-size: 36px;
             font-weight: 400;
             line-height: 43.2px;
+            margin-left: 20px;
         }
         &2::after {
             content: '';
@@ -341,6 +349,7 @@ span {
         flex-wrap: wrap;
         min-width: 600px;
         gap: 23px;
+        justify-content: center;
         &_left {
             background: #FFCC80;
             width: 260px;
@@ -349,6 +358,11 @@ span {
             border: #FFCC80;
             color: #3C4852;
             font-weight: 800;
+            transition: 1000ms ease;
+            &:hover {
+                transform: scale(110%);
+            }
+            
         }
         &_right {
             width: 230px;
@@ -358,6 +372,11 @@ span {
             border-radius: 10px;
             color: #3C4852;
             font-weight: 800;
+            transition: 1000ms ease;
+            &:hover {
+                transform: scale(110%);
+            }
+            
         }
     }
 }
@@ -367,6 +386,10 @@ span {
     color:#3C4852;
     font-size: 18px;
     font-weight: 700;
+    transition: 1000ms ease;
+    &:hover {
+        transform: scale(110%);
+    }
 }
 
 .service_benefits {
@@ -628,6 +651,7 @@ span {
             align-items: center;
             gap: 5px;
             justify-content: center;
+            transition: 1000ms ease;
             &_image {
                 margin: 10px;
             }
@@ -637,6 +661,9 @@ span {
             line-height: 21.6px;
             color: #FFFFFF;
             text-decoration: none;
+            }
+            &:hover {
+                transform: scale(110%);
             }
         }
         &_order {
@@ -648,6 +675,10 @@ span {
             color: #3C4852;
             font-weight: 700;
             letter-spacing: 0.7px;
+            transition: 1000ms ease;
+            &:hover {
+                transform: scale(110%);
+            }
         }
     }
 }
@@ -877,6 +908,10 @@ span {
             color: #3C4852;
             font-size: 14px;
             font-weight: 800;
+            transition: 1000ms ease;
+            &:hover {
+                transform: scale(115%);
+            }
         }
     }
 }
