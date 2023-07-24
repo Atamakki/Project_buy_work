@@ -1361,6 +1361,10 @@ span {
   padding: 8px;
   border-radius: 7px;
   cursor: pointer;
+  transition: 1000ms ease;
+}
+.settings_posttop_item_edit img:hover {
+  transform: scale(110%);
 }
 .settings_middle {
   display: flex;
@@ -1456,6 +1460,10 @@ span {
   background: #66B87A;
   border: 0px;
   padding: 17px 39px;
+  transition: 1000ms ease;
+}
+.settings button:hover {
+  transform: scale(110%);
 }
 
 .box_settings {
@@ -1582,6 +1590,7 @@ span {
   color: #3C4852;
   font-size: 18px;
   font-weight: 600;
+  text-align: center;
 }
 .order_main__deadline_date {
   display: flex;
@@ -1670,6 +1679,43 @@ span {
   min-width: 212px;
 }
 
+@media (max-width: 1200px) {
+  .order_main__files {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 950px) {
+  .order_main {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+  }
+  .order_main__type {
+    width: 100%;
+  }
+  .order_main_about {
+    width: 100%;
+  }
+  .order_main_description {
+    width: 100%;
+  }
+  .order_main {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .order_main__type_list {
+    justify-content: center;
+  }
+  .order_main__type_list input {
+    margin-left: 10px;
+  }
+  .order_main__type_list input::placeholder {
+    padding-left: 0px;
+  }
+}
 /* CALENDAR */
 .order_main__calendar {
   padding: 30px 30px;
@@ -1709,6 +1755,16 @@ span {
   background: #FFF !important;
 }
 
+@media (max-width: 550px) {
+  .order_main__calendar {
+    width: 80%;
+    padding-right: 30px;
+  }
+  .order_main__calendar div {
+    width: 10px;
+    height: 10px;
+  }
+}
 /* CALENDAR */
 
 /*# sourceMappingURL=styles.css.map */
