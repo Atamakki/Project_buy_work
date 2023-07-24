@@ -167,7 +167,7 @@ span {
   position: fixed;
   top: 0;
   right: 0;
-  width: 400px;
+  width: 399px;
   min-height: 350px;
   box-sizing: border-box;
   padding: 60px 20px;
@@ -198,6 +198,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  position: relative;
 }
 
 .menu_close_button {
@@ -1016,7 +1017,7 @@ span {
 .profile_exit_button:hover {
   background-color: #E1B26C;
   color: #FFF;
-  transform: scale(105%);
+  transform: scale(110%);
 }
 
 /* MOBILE PROFILE MENU */
@@ -1032,7 +1033,7 @@ span {
   position: fixed;
   top: 0;
   right: 0;
-  width: 400px;
+  width: 399px;
   min-height: 700px;
   box-sizing: border-box;
   padding: 60px 20px;
@@ -1065,6 +1066,13 @@ span {
 .mobile_profile_actions {
   align-items: start !important;
   margin-left: 10px;
+}
+
+#profile_nav-menu-close {
+  position: absolute;
+  top: -70px;
+  left: 70px;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -1244,6 +1252,7 @@ span {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 7px;
 }
 .pfooter_payments_item {
@@ -1287,6 +1296,19 @@ span {
   border-radius: 10px;
   background: #FFCC80;
   padding: 18px 25px;
+}
+@media (max-width: 1200px) {
+  .pfooter .pfooter_order {
+    padding: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .pfooter .pfooter_rights {
+    padding: 10px 0px;
+  }
+  .pfooter .pfooter_support {
+    padding: 10px 0px;
+  }
 }
 
 .settings {
@@ -1338,6 +1360,7 @@ span {
   background-color: #3C4852;
   padding: 8px;
   border-radius: 7px;
+  cursor: pointer;
 }
 .settings_middle {
   display: flex;

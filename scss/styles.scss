@@ -182,7 +182,7 @@ span {
     position: fixed;
     top: 0;
     right: 0;
-    width: 400px;
+    width: 399px;
     min-height: 350px;
     box-sizing: border-box;
     padding: 60px 20px;
@@ -213,6 +213,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    position: relative;
 }
 
 .menu_close_button {
@@ -1047,7 +1048,7 @@ span {
             &:hover {
                 background-color: #E1B26C;
                 color: #FFF;
-                transform: scale(105%);
+                transform: scale(110%);
             }
         }
     }
@@ -1067,7 +1068,7 @@ span {
     position: fixed;
     top: 0;
     right: 0;
-    width: 400px;
+    width: 399px;
     min-height: 700px;
     box-sizing: border-box;
     padding: 60px 20px;
@@ -1102,6 +1103,12 @@ span {
     margin-left: 10px;
  }
 
+ #profile_nav-menu-close {
+    position: absolute;
+    top: -70px;
+    left: 70px;
+    cursor: pointer;
+ }
 
  @media (max-width: 1000px) {
     .profile {
@@ -1284,6 +1291,7 @@ span {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 7px;
         &_item {
             border-radius: 14px;
@@ -1331,6 +1339,24 @@ span {
         }
     }
 
+    @media (max-width: 1200px) {
+        .pfooter {
+            &_order {
+                padding: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 650px) {
+        .pfooter {
+            &_rights {
+                padding: 10px 0px;
+            }
+            &_support {
+                padding: 10px 0px;
+            }
+        }
+    }
 
 
     /* SETTINGS PAGE AND PREVIOUS HEADER AND FOOTER */
@@ -1381,7 +1407,7 @@ span {
                     background-color: #3C4852;
                     padding: 8px;
                     border-radius: 7px;
-
+                    cursor: pointer;
                 }
             }
         }

@@ -8,6 +8,61 @@
     <link href="./font/Panton-Trial-Black.ttf" rel="stylesheet">
 </head>
 <body>
+    <div class="wrapper_profile">
+        <div class="mobile-menu-profile hidden profile_menu">
+                <div class="profile_menu_top">
+                    <div class="profile_menu_photo">
+                        <img src="./images/profile_photo.png" width="57" height="57">
+                    </div>
+                    <div class="profile_exit">
+                        <button class="profile_exit_button">Выйти</button>
+                    </div>
+                    <div class="menu-rightside">
+                        <button id="profile_nav-menu-close" class="menu_close_button"><img src="./images/close_menu.svg" width="23" height="23"></button>
+                    </div>
+                </div>
+                <div class="profile_actions mobile_profile_actions">
+                    <div class="profile_actions_top left_border">
+                        <div class="profile_actions_top_balance">
+                            <div><img src="./images/money_bag.svg" width="24" height="24"></div>
+                            <div>Баланс:</div>
+                        </div>
+                        <div><button class="profile_actions_top_amount">1234 ₽</button></div>
+                    </div>
+                    <div class="profile_actions_bottom">
+                        <div><button class="profile_actions_bottom_button">Пополнить</button></div>
+                        <div><button class="profile_actions_bottom_button">Вывести</button></div>
+                    </div>
+                </div>
+                <div class="profile_settings link_border">
+                    <div><a href="./my_profile.html"><img src="./images/support.svg" width="26" height="26"></a></div>
+                    <div class="profile_settings_text"><a href="./my_profile.html">Поддержка</a></div>
+                </div>
+                <div class="profile_settings link_border">
+                    <div><img src="./images/orders.svg" width="25" height="25"></div>
+                    <div class="profile_settings_text">Мои заказы</div>
+                </div>
+                <div class="profile_settings link_border">
+                    <div><a href="./settings_profile_page.html"><img src="./images/settings.svg" width="27" height="27"></a></div>
+                    <div class="profile_settings_text"><a href="./settings_profile_page.html">Настройки</a></div>
+                </div>
+                <div class="profile_menu_order left_border">
+                    <a href="./placing_an_order.html"><button class="profile_order_button">Разместить заказ</button></a>
+                </div>
+        </div>
+    </div>
+    <div class="column profile_column">
+        <div class="row">
+            <div class="profile_mobile">
+                <div class="profile_owl_logo">
+                    <a href='./index.html'><img src="./images/logo_profile.svg" width="153" height="59"></a>
+                </div>
+                <div class="mobile_header_right">
+                    <button id="menu-open" class="menu-button"><img src="./images/menu.svg" width="33px" height="19px"></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="column profile_column">
         <div class="row">
             <div class="profile">
@@ -129,5 +184,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/main_profile.js"></script>
 </body>
 </html>
